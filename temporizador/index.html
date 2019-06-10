@@ -7,14 +7,15 @@
         <h2>Temporizador</h2>
     </div>
     <script>
-        var app = document
-        .querySelector("#app");
+        function disparaAlerta() {
+            var app = document
+            .querySelector("#app");
 
-        texto = app.innerContent; 
-
-        setInterval(() => {
-            alert(texto)
-        }, 5000);
+            texto = app.innerContent;
+            alert(texto) 
+        }
+        
+        setInterval(disparaAlerta, 5000);
 
         
     </script>   
